@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Timeline</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	  />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/slider.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="demo-1">
+		<div class="overlay">
+	
+		<main>
+			<div class="content content--fixed">
+				<header class="codrops-header">
+					<div class="codrops-links">
+						<a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/ScrollingLettersAnimation/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+						<a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=33985" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+					</div>
+					
+				</header>
+				
+			</div>
+			<div class="content">
+				<!-- Pieces Slider -->
+				<div class="pieces-slider">
+					<!-- Each slide with corresponding image and text -->
+					<div class="pieces-slider__slide">
+						<p class="pieces-slider__year" value="2004" id="year" ></p>
+						<img class="pieces-slider__image" src="img/2.jpg" alt="">
+						<h2 class="pieces-slider__text">First Match</h2>
+					</div>
+					<div class="pieces-slider__slide">
+						<p class="pieces-slider__year" value="2006" id="year" ></p>
+						<img class="pieces-slider__image" src="img/4.jpg" alt="">
+						<h2 class="pieces-slider__text">El Clásico </h2>
+					</div>
+					<div class="pieces-slider__slide">
+						<p class="pieces-slider__year" value="10" id="year" ></p>
+						<img class="pieces-slider__image" src="img/3.jpeg" alt="">
+						<h2 class="pieces-slider__text">The Great Duo</h2>
+					</div>
+					<div class="pieces-slider__slide">
+						<p class="pieces-slider__year" value="2009" id="year" ></p>
+						<img class="pieces-slider__image" src="img/5.jpg" alt="">
+						<h2 class="pieces-slider__text">No. 10</h2>
+					</div>
+					<div class="pieces-slider__slide">
+						<p class="pieces-slider__year" value="2010" id="year" ></p>
+						<img class="pieces-slider__image" src="img/6.jpg" alt="">
+						<h2 class="pieces-slider__text">UEFA Champions</h2>
+					</div>
+					<!-- Canvas to draw the pieces -->
+					<canvas class="pieces-slider__canvas"></canvas>
+					<!-- Slider buttons: prev and next -->
+					<button class="animate__animated animate__bounceIn  pieces-slider__button pieces-slider__button--prev"><i class="material-icons" style="font-size: 48px;opacity: 0.85;">chevron_left</i></button>
+					<button class="animate__animated animate__bounceIn pieces-slider__button pieces-slider__button--next"><i class="material-icons" style="font-size: 48px;opacity: 0.85;">chevron_right</i></button>
+				</div>
+			</div>
+		</main>
+		
+		<script src='js/anime.min.js'></script>
+		<script src='js/pieces.min.js'></script>
+		<script src='js/demo.js'></script>
+		
+	</div>
+	
+	</body>
+</html>
